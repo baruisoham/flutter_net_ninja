@@ -144,7 +144,7 @@ class _NinjaCardState extends State<NinjaCard> {
       ),
 
       floatingActionButton: FloatingActionButton(onPressed: () {  // when button is pressed, we want the following to happen.
-        setState(() {      // When command inside setState() changes -> the state changes -> causes the app to rebuild. Thus, displaying the changes.
+        setState(() {      // When button is pressed -> the state changes -> causes the app to rebuild. Thus, displaying the changes.
           level++;         // if we put the command directly, without putting it inside setState(), the level variable will change, but it will not display as the state did not change.
         });                // to make sure that whenever variable changes the app should show change, we should put the command inside setState().
       },
